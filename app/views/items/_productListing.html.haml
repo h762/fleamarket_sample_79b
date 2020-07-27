@@ -12,7 +12,8 @@
       = form_with url:"#", local: true do |i|
         = i.label :image, class: "Base__body__area__picture__iconArea" do
           = icon('fas','camera')
-          = i.file_field :image, class: "Base__body__area__picture__iconArea__pictureArea"
+          = i.fields_for :images, class: "Base__body__area__picture__iconArea__pictureArea" do |k|
+            = k.file_field :src<br> 
           .Base__body__area__picture__iconArea__text
             ドラッグアンドドロップ<br>またはクリックしてファイルをアップロード
 
