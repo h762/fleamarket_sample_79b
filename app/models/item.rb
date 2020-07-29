@@ -1,3 +1,6 @@
+# class Brand < AvctiveHash::Base
+# end
+
 class Item < ApplicationRecord
   enum region: {
     北海道:1,青森県:2,岩手県:3,宮城県:4,秋田県:5,山形県:6,福島県:7,
@@ -12,4 +15,8 @@ class Item < ApplicationRecord
 
   has_many :images, dependent: :destroy
   accepts_nested_attributes_for :images, allow_destroy: true
+
+  # extend ActiveHash::Associations::ActiveRecordExtensions
+  # belongs_to brand
 end
+
