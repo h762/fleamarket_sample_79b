@@ -21,7 +21,7 @@ class Item < ApplicationRecord
     validates :delivery_cost_payer_id
     validates :seller_region_id
     validates :preparation_for_shipment_id
-    validates :image
+    validates :image_id
   end
 
 
