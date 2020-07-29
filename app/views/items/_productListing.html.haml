@@ -10,13 +10,12 @@
         .Base__body__area__picture__text__explain
           最大10枚までアップロードできます
       = form_with url:"#", local: true do |i|
-        = i.label :image, class: "Base__body__area__picture__iconArea" do
-          = icon('fas','camera')
-          -# = i.file_field :image, class: "Base__body__area__picture__iconArea__pictureArea"
-          = i.fields_for :images do |k|
-            = k.file_field :src, class: "Base__body__area__picture__iconArea__pictureArea"
-          .Base__body__area__picture__iconArea__text
-            ドラッグアンドドロップ<br>またはクリックしてファイルをアップロード
+        = i.fields_for :images do |k|
+          = k.label :image, class: "Base__body__area__picture__iconArea" do
+            = icon('fas','camera')
+            = k.file_field :image, class: "Base__body__area__picture__iconArea__pictureArea"
+            .Base__body__area__picture__iconArea__text
+              ドラッグアンドドロップ<br>またはクリックしてファイルをアップロード
 
     .Base__body__area__item
       .Base__body__area__item__nameArea
