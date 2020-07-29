@@ -116,7 +116,7 @@
         .Base__body__area__price__profitArea__calculate
           ー
 
-    = form_with url:"#", class: "Base__body__area__buttonArea", local: true do |i|
+    = form_with(model: @item, local: true, class: "Base__body__area__buttonArea") do |i|
       = i.submit "出品する", class:"Base__body__area__buttonArea__exhibit"
       = i.submit "下書きに保存", class:"Base__body__area__buttonArea__save"
       = link_to "もどる","#", class: "Base__body__area__buttonArea__back"
