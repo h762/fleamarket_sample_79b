@@ -1,4 +1,5 @@
 class ItemCondition < ActiveHash::Base
+  include ActiveHash::Associations
   field :condition
   add id: 1, condition: "新品、未使用"
   add id: 2, condition: "未使用に近い"

@@ -1,4 +1,5 @@
 class SellerRegion < ActiveHash::Base
+  include ActiveHash::Associations
   field :region 
   add id: 1, prefercture: "北海道"
   add id: 2, prefercture: "青森県"
