@@ -17,6 +17,7 @@ class Item < ApplicationRecord
   belongs_to :brand
   belongs_to_active_hash :delivery_cost
   belongs_to_active_hash :item_condition
+  belongs_to_active_hash :conditionA
   belongs_to_active_hash :seller_region
   belongs_to_active_hash :preparation_for_shipment
   belongs_to_active_hash :status
