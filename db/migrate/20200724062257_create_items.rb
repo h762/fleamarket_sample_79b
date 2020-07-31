@@ -5,8 +5,8 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.string :name, null: false
       t.text :description, null: false
       t.integer :price, null: false
-      t.references :buyer, foreign_key: true
-      t.references :seller, foreign_key: true, null: false
+      t.references :buyer, foreign_key: { to_table: :users }
+      t.references :seller, foreign_key: { to_table: :users }, null: false
       t.references :category, foreign_key: true, null: false
       t.references :brand, foreign_key: true
       t.references :item_condition, foreign_key: true, null: false
@@ -14,6 +14,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.references :seller_region, foreign_key: true, null: false
       t.references :preparation_for_shipment, foreign_key: true, null:false
       t.references :status, foleign_key: true, null: false
+      t.references :user, foreign_key: true
       t.timestamp :deal_ending_day
       t.timestamps
     end
