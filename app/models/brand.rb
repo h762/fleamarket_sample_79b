@@ -1,3 +1,3 @@
-class Brand < ActiveHash::Base
-  include ActiveHash::Associations
+class Brand < ApplicationRecord
+  has_many :items
 end

@@ -62,7 +62,7 @@
           .Base__body__area__itemDetail__conditionArea__step__mark
             必須
         = form_with url:"#", local: true do |i|
-          = i.collection_select( :conditionA_id, ItemCondition.all, :id, :condition)
+          = i.collection_select( :condition_id, ItemCondition.all, :id, :condition)
           -# = i.select :item, {"新品、未使用":1, "未使用に近い":2, "目立った傷や汚れなし":3, "やや傷や汚れあり":4, "傷や汚れあり":5, "全体的に状態が悪い":6}, {include_blank: "選択してください"}, {class: "Base__body__area__itemDetail__conditionArea__selectArea", required: true}
     
     .Base__body__area__delivery

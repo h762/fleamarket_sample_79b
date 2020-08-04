@@ -1,4 +1,4 @@
-class SellerRegion < ActiveHash::Base
+class Status < ActiveHash::Base
   include ActiveHash::Associations
   field :status
   add id: 1, status: "出品中"
