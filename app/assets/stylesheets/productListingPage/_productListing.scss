@@ -249,15 +249,15 @@
               @include mark;
             }
           }
-          &__selectArea{
-            height: 50px;
-            width: calc(100% - 20px);
-            margin: 10px 0 40px 0;
-            padding-left: 10px;
-            display: inline-block;
-            border: 1px solid rgb(206, 206, 206);
-          }
-          #seller_region_id{
+          // &__selectArea{
+          //   height: 50px;
+          //   width: calc(100% - 20px);
+          //   margin: 10px 0 40px 0;
+          //   padding-left: 10px;
+          //   display: inline-block;
+          //   border: 1px solid rgb(206, 206, 206);
+          // }
+          #prefercture_id{
             height: 50px;
             width: calc(100% - 20px);
             margin: 10px 0 40px 0;

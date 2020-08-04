@@ -84,8 +84,8 @@
           .Base__body__area__delivery__regionArea__step__mark
             必須
         = form_with url:"#", local: true do |i|
-          -# = i.collection_select( :seller_region_id, SellerRegion.all, :id, :prefercture)
-          = i.select :region, Item.regions.keys, {include_blank: "選択してください"}, {class: "Base__body__area__delivery__regionArea__selectArea", required: true}
+          = i.collection_select( :prefercture_id, SellerRegion.all, :id, :prefercture)
+          -# = i.select :region, Item.regions.keys, {include_blank: "選択してください"}, {class: "Base__body__area__delivery__regionArea__selectArea", required: true}
       .Base__body__area__delivery__daysArea
         .Base__body__area__delivery__daysArea__step
           .Base__body__area__delivery__daysArea__step__days
