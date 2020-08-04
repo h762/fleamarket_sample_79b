@@ -197,7 +197,7 @@
           //   margin-top: 10px;
           //   padding-left: 10px;
           // }
-          #conditionA_id{
+          #condition_id{
             height: 40px;
             width: calc(100% - 20px);
             display: inline-block;
@@ -222,7 +222,7 @@
               @include mark;
             }
           }
-          &__selectArea{
+          #deliveryCost_id{
             height: 50px;
             width: calc(100% - 20px);
             margin: 10px 0 40px 0;
@@ -230,6 +230,14 @@
             display: inline-block;
             border: 1px solid rgb(206, 206, 206);
           }
+          // &__selectArea{
+          //   height: 50px;
+          //   width: calc(100% - 20px);
+          //   margin: 10px 0 40px 0;
+          //   padding-left: 10px;
+          //   display: inline-block;
+          //   border: 1px solid rgb(206, 206, 206);
+          // }
         }
         &__regionArea{
           &__step{

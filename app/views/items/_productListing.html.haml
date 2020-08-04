@@ -75,7 +75,8 @@
           .Base__body__area__delivery__feeArea__step__mark
             必須
         = form_with url:"#", local: true do |i|
-          = i.select :item, {"送料込み(出品者負担)":1, "着払い(購入者負担)":2}, {include_blank: "選択してください"}, {class: "Base__body__area__delivery__feeArea__selectArea", required: true}
+          = i.collection_select( :deliveryCost_id, DeliveryCost.all, :id, :deliveryCost)
+          -# = i.select :item, {"送料込み(出品者負担)":1, "着払い(購入者負担)":2}, {include_blank: "選択してください"}, {class: "Base__body__area__delivery__feeArea__selectArea", required: true}
       .Base__body__area__delivery__regionArea
         .Base__body__area__delivery__regionArea__step
           .Base__body__area__delivery__regionArea__step__region
