@@ -104,7 +104,9 @@
           .Base__body__area__price__sellingPriceArea__inputStep
             .Base__body__area__price__sellingPriceArea__inputStep__unit
               ¥
-            %input.Base__body__area__price__sellingPriceArea__inputStep__selectArea{name: "price", type: "number", placeholder: 0}
+            .Base__body__area__price__sellingPriceArea__inputStep__selectArea
+              = i.number_field :price, placeholder: 0, in: 300.0..9999999.0, step: 1.0
+            -# %input.Base__body__area__price__sellingPriceArea__inputStep__selectArea{name: "price", type: "number", placeholder: 0}
         .Base__body__area__price__chargeArea
           .Base__body__area__price__chargeArea__charge
             販売手数料（10%）
