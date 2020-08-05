@@ -129,7 +129,15 @@
               @include mark;
             }
           }
-          &__selectArea{
+          // &__selectArea{
+          //   height: 50px;
+          //   width: calc(100% - 20px);
+          //   display: inline-block;
+          //   border: 1px solid rgb(206, 206, 206);
+          //   margin: 10px 0 30px 0;
+          //   padding-left: 10px;
+          // }
+          #item_category_id{
             height: 50px;
             width: calc(100% - 20px);
             display: inline-block;
