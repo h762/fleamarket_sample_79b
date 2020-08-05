@@ -130,7 +130,7 @@
             }
           }
           &__selectArea{
-            height: 40px;
+            height: 50px;
             width: calc(100% - 20px);
             display: inline-block;
             border: 1px solid rgb(206, 206, 206);
@@ -159,7 +159,7 @@
             }
           }
           &__inputArea{
-            height: 40px;
+            height: 50px;
             width: calc(100% - 20px);
             display: inline-block;
             margin: 10px 0 30px 0;
@@ -181,24 +181,8 @@
               @include mark;
             }
           }
-          // &__selectArea{
-          //   height: 40px;
-          //   width: calc(100% - 20px);
-          //   display: inline-block;
-          //   border: 1px solid rgb(206, 206, 206);
-          //   margin-top: 10px;
-          //   padding-left: 10px;
-          // }
-          // #item_condition_id{
-          //   height: 40px;
-          //   width: calc(100% - 20px);
-          //   display: inline-block;
-          //   border: 1px solid rgb(206, 206, 206);
-          //   margin-top: 10px;
-          //   padding-left: 10px;
-          // }
-          #condition_id{
-            height: 40px;
+          #item_item_condition_id{
+            height: 50px;
             width: calc(100% - 20px);
             display: inline-block;
             border: 1px solid rgb(206, 206, 206);
@@ -222,7 +206,7 @@
               @include mark;
             }
           }
-          #deliveryCost_id{
+          #item_delivery_cost_id{
             height: 50px;
             width: calc(100% - 20px);
             margin: 10px 0 40px 0;
@@ -230,14 +214,6 @@
             display: inline-block;
             border: 1px solid rgb(206, 206, 206);
           }
-          // &__selectArea{
-          //   height: 50px;
-          //   width: calc(100% - 20px);
-          //   margin: 10px 0 40px 0;
-          //   padding-left: 10px;
-          //   display: inline-block;
-          //   border: 1px solid rgb(206, 206, 206);
-          // }
         }
         &__regionArea{
           &__step{
@@ -249,15 +225,7 @@
               @include mark;
             }
           }
-          // &__selectArea{
-          //   height: 50px;
-          //   width: calc(100% - 20px);
-          //   margin: 10px 0 40px 0;
-          //   padding-left: 10px;
-          //   display: inline-block;
-          //   border: 1px solid rgb(206, 206, 206);
-          // }
-          #prefercture_id{
+          #item_seller_region_id{
             height: 50px;
             width: calc(100% - 20px);
             margin: 10px 0 40px 0;
@@ -276,7 +244,7 @@
               @include mark;
             }
           }
-          &__selectArea{
+          #item_preparation_for_shipment_id{
             height: 50px;
             width: calc(100% - 20px);
             margin-top: 10px;
