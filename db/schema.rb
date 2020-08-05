@@ -18,13 +18,6 @@ ActiveRecord::Schema.define(version: 2020_07_29_214436) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "ancestry", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "item_id", null: false
     t.string "image_url", null: false
@@ -72,7 +65,6 @@ ActiveRecord::Schema.define(version: 2020_07_29_214436) do
 
   add_foreign_key "images", "items"
   add_foreign_key "items", "brands"
-  add_foreign_key "items", "categories"
   add_foreign_key "items", "users"
   add_foreign_key "items", "users", column: "buyer_id"
   add_foreign_key "items", "users", column: "seller_id"
