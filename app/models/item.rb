@@ -2,8 +2,8 @@ class Item < ApplicationRecord
 
   has_many :images, dependent: :destroy
   belongs_to :user
-  belongs_to :category
   belongs_to :brand
+  belongs_to_active_hash :category
   belongs_to_active_hash :delivery_cost
   belongs_to_active_hash :item_condition
   belongs_to_active_hash :seller_region
