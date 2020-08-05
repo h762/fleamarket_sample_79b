@@ -14,14 +14,14 @@ class Item < ApplicationRecord
 
   accepts_nested_attributes_for :images, allow_destroy: true
   
-  # with_options presence: true do 
-  #   validates :name
-  #   validates :decription
-  #   validates :price
-  #   validates :category_id
-  #   validates :item_condition_id
-  #   validates :delivery_cost_payer_id
-  #   validates :preparation_for_shipment_id
-  #   validates :image_id
-  # end
+  with_options presence: true do 
+    validates :name
+    validates :description
+    validates :price
+    validates :category_id
+    validates :item_condition_id
+    validates :delivery_cost_id
+    validates :preparation_for_shipment_id
+    validates :image_ids
+  end
 end

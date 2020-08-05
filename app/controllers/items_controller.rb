@@ -10,6 +10,7 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
+    @brand = Brand.new(brand_params)
     # binding.pry
     if @item.save
       redirect_to root_path, notice: "ok"
@@ -27,6 +28,9 @@ class ItemsController < ApplicationController
   def item_params
     params.require(:item).permit(:name, :description, :category_id, :brand_id, :item_condition_id, :delivery_cost_id, :seller_region_id, :preparation_for_shipment_id, :price)
   end
+
+  def brand_params
+    params.require(:item).permit(:brand_name)
+  end
 end
-# :buyer_id, :seller_id, :category_id, :brand, , :deloveryCost_id, :prefercture_id, :day_id, :status_id, :user_id, :deal_ending_day
-# , :images_attributes: [:src] , :description,  :condition_id :price,
+# , :images_attributes: [:src] , :description,  :condition_id :price, :deal_ending_day
